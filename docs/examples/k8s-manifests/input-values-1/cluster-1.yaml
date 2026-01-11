@@ -1,0 +1,3 @@
+service:
+  annotations:
+    specific: cluster-1

@@ -1,0 +1,38 @@
+diff -u /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-1/cluster-1.yaml /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-2/cluster-1.yaml
+--- /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-1/cluster-1.yaml	2026-01-11 10:25:38
++++ /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-2/cluster-1.yaml	2026-01-11 10:25:38
+@@ -11,7 +11,9 @@
+     app.kubernetes.io/version: "6.9.4"
+     app.kubernetes.io/managed-by: Helm
+   annotations:
+-    specific: cluster-1
++    more: here
++    specific: cluster-1-new
++    weird: \n
+ spec:
+   type: ClusterIP
+   ports:
+diff -u /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-1/cluster-2.yaml /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-2/cluster-2.yaml
+--- /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-1/cluster-2.yaml	2026-01-11 10:25:38
++++ /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-2/cluster-2.yaml	2026-01-11 10:25:38
+@@ -11,7 +11,7 @@
+     app.kubernetes.io/version: "6.9.4"
+     app.kubernetes.io/managed-by: Helm
+   annotations:
+-    specific: cluster-2
++    specific: cluster-2-different
+ spec:
+   type: ClusterIP
+   ports:
+diff -u /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-1/cluster-3.yaml /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-2/cluster-3.yaml
+--- /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-1/cluster-3.yaml	2026-01-11 10:25:38
++++ /Users/ghostsquad/projects/diff-differ/docs/examples/k8s-manifests/rendered-2/cluster-3.yaml	2026-01-11 10:25:39
+@@ -11,7 +11,7 @@
+     app.kubernetes.io/version: "6.9.4"
+     app.kubernetes.io/managed-by: Helm
+   annotations:
+-    specific: cluster-3
++    specific: cluster-3-changed
+ spec:
+   type: ClusterIP
+   ports:

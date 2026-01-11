@@ -1,0 +1,5 @@
+service:
+  annotations:
+    specific: cluster-1-new
+    weird: '\n'
+    more: here
